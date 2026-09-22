@@ -22,9 +22,15 @@ export default function RootLayout() {
           </div>
           <ModeToggle />
         </header>
+
         <main className="flex-1 p-4">
           <Outlet />
         </main>
+
+        {/* ข้อ 4: แก้เป็นชื่อ-นามสกุลจริงของตัวเอง */}
+        <footer className="border-t p-4 text-center text-xs text-muted-foreground">
+          จัดทำโดย จักรราศี ทองเหลือง รหัสนักศึกษา 680610659
+        </footer>
       </SidebarInset>
     </SidebarProvider>
   );
